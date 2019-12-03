@@ -10,4 +10,4 @@ class Impegni:
             self.ora[idxElement] = False
 
 
-appuntamenti = [Impegni, "mercoledi", "giovedi", "venerdi", "sabato"]
+appuntamenti = [Impegni("martedi"), "mercoledi", "giovedi", "venerdi", "sabato"]
