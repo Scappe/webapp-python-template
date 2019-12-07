@@ -6,19 +6,39 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
- <ul></ul>
+
+    <nav>
+        <div id="wrapper">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="##">Blog</a></li>
+                <li><a href="###">Amministrazione</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul></ul>
+
+
+
 </body>
+
 <script src="jquery-3.4.1.min.js"></script>
 <script>
     $.getJSON("/data").done(makeList);
     function makeList(appuntamenti) {
-    for (x of appuntamenti) {
-        let newItem = `<li>${x.giorno}</li>`;
-        $("ul").append(newItem);
+        for (x of appuntamenti) {
+            var a = 1;
+            let newItem = `<li>${x.giorno}</li>`;
+            let tag = "ul";
+            const a = "a";
+            $(tag).append(newItem);
+        }
     }
-}
 </script>
+
 </html>
