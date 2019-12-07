@@ -1,10 +1,9 @@
 from flask import Flask, Response
 import json
+from gestionale import impegni
 
-from something import something
 
-
-app = Flask(__name__)
+app = Flask("gestionale")
 
 @app.route('/')
 def root():
@@ -16,5 +15,5 @@ def js():
 
 @app.route("/data")
 def data():
-    json_string = json.dumps([x for x in something])
+    json_string = json.dumps([x for x in impegni])
     return Response(json_string, mimetype='application/json')
