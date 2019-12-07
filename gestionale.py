@@ -3,8 +3,9 @@ class Impegni:
 
         self.ora = []
 
-        for index in range(0,24):
+        for index in range(0, 24):
             self.ora.append(False)
 
 
-appuntamenti = [Impegni("martedi"), Impegni("martedi"), Impegni("martedi"), Impegni("martedi"), Impegni("martedi")]
+appuntamenti = [Impegni("martedi"), Impegni("mercoledì"), Impegni(
+    "giovedì"), Impegni("venerdì"), Impegni("sabato")]
